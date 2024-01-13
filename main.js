@@ -1,3 +1,4 @@
+// EXAMPLE 1
 let a, b, rest;
 [a, b] = [10, 20];
 
@@ -6,7 +7,11 @@ console.log(b); // 20
 [a, b, ...rest] = [10, 20, 30, 40, 50, 60];
 console.log(rest); // [30, 40, 50, 60]
 
-
+// EXAMPLE 2
+const x = [1, 2, 3, 4, 5];
+const [y, z] = x;
+console.log(y); // 1
+console.log(z); // 2
 
 
 
