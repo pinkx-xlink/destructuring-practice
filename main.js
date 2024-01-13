@@ -28,3 +28,12 @@ for (const {
 }
 // Name: Miss Daisy, Father: Stephen Daisy
 // Name: Tom Jones, Father: Richard Jones
+
+
+// Invalid JavaScript identifier as a property name
+// Destructuring can be used with property names 
+// that are not valid JavaScript identifiers 
+// by providing an alternative identifier that is valid.
+const foo = { "fizz-buzz": true }; //console.log = {fizz-buzz: true}
+const { "fizz-buzz": fizzBuzz } = foo; //console.log(foo) = {fizz-buzz: true}
+console.lo(fizzBuzz); //true
