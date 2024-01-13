@@ -19,3 +19,10 @@ const people = [
         age: 32,
     },
 ];
+
+for (const {
+    name: n,
+    family: { father: f },
+} of people) {
+    console.log(`Name: ${n}, Father: ${f}`);
+}
