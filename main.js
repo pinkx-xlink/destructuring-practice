@@ -26,3 +26,5 @@ for (const {
 } of people) {
     console.log(`Name: ${n}, Father: ${f}`);
 }
+// Name: Miss Daisy, Father: Stephen Daisy
+// Name: Tom Jones, Father: Richard Jones
