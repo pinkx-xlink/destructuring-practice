@@ -14,6 +14,13 @@ console.log(y); // 1
 console.log(z); // 2
 
 
+// EXAMPLE 3
+const obj1 = { aa: 1, bb: 2 }; // console.log(obj.aa) = 1, (obj1.bb) = 2
+const { a, b } = obj1;
+// is equivalent to:
+// const a = obj.a;
+// const b = obj.b;
+
 
 // for/of iteration 
 const people = [
