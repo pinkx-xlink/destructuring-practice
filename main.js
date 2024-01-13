@@ -50,3 +50,12 @@ console.log(name); // FizzBuzz
 
 
 // The prototype chain is looked up when the object is deconstructed
+const obj = { // console.log(obj) == {self: '123'}
+    self: '123',
+    __proto__: {
+        prot: '456', // obj.prot = '456'
+    },
+};
+const { self, prot } = obj;
+console.log(self); // "123"
+console.log(prot); // "456"
