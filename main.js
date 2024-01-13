@@ -16,10 +16,21 @@ console.log(z); // 2
 
 // EXAMPLE 3
 const obj1 = { aa: 1, bb: 2 }; // console.log(obj.aa) = 1, (obj1.bb) = 2
-const { a, b } = obj1;
+const { aa, bb } = obj1;
 // is equivalent to:
 // const a = obj.a;
 // const b = obj.b;
+
+// BINDING PATTERNS
+// starts w a declaration or const,
+// then each individual property is bound to a variable
+// or further destructured
+const obj2 = { A: 1, B: { c: 2 } };
+const {
+  A,
+  B: { c: d },
+} = obj2;
+// Two variables are bound: A and d
 
 
 // for/of iteration 
