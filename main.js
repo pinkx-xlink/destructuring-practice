@@ -37,3 +37,16 @@ for (const {
 const foo = { 'fizz-buzz': true }; // console.log = {fizz-buzz: true}
 const { 'fizz-buzz': fizzBuzz } = foo; // console.log(foo) = {fizz-buzz: true}
 console.log(fizzBuzz); // true
+
+
+// COMBINED ARRAY AND OBJECT DESTRUCTURING
+const props = [
+    { id: 1, name: "Fizz" },
+    { id: 2, name: "Buzz" },
+    { id: 3, name: "FizzBuzz" },
+];
+const [, , { name }] = props;
+console.log(name); // FizzBuzz
+
+
+// The prototype chain is looked up when the object is deconstructed
