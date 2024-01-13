@@ -36,4 +36,4 @@ for (const {
 // by providing an alternative identifier that is valid.
 const foo = { "fizz-buzz": true }; //console.log = {fizz-buzz: true}
 const { "fizz-buzz": fizzBuzz } = foo; //console.log(foo) = {fizz-buzz: true}
-console.lo(fizzBuzz); //true
+console.log(fizzBuzz); //true
